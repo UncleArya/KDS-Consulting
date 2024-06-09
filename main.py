@@ -46,6 +46,3 @@ def contact():
         NotificationManager(name, email, phone, message).send_email()
         return render_template("contact_submitted.html")
 
-
-if __name__ == "__main__":
-    app.run(debug=True)
