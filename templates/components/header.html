@@ -1,6 +1,48 @@
 {% block header %}
 <!-- Navbar -->
-<div class="container">
+
+<nav class="navbar navbar-expand-md navbar-background">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{{ url_for('home') }}">
+            <img
+                href="{{ url_for('home') }}"
+                alt=""
+                class="header-image d-inline-block"
+                src="./static/assets/Maru.png" />
+            KDS Consulting
+        </a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('experience') }}">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Add top padding -->
+ <!-- <div class="py-5"></div> -->
+<!-- <div class="container mt-5">
     <div
         class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
         <div class="d-flex align-items-center col-md-3 mb-2 mb-md-0">
@@ -21,12 +63,6 @@
                 <a href="{{ url_for('contact') }}" class="nav-link px-2 link-dark">Contact</a>
             </li>
         </ul>
-        <!-- <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2">
-          Secondary
-        </button>
-        <button type="button" class="btn btn-primary">Primary</button>
-      </div> -->
     </div>
-</div>
+</div> -->
 {% endblock %}

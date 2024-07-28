@@ -4,6 +4,7 @@
 
 -   Python
     -   Flask
+-   HTML
 -   CSS
     -   Bootstrap
 -   JavaScript
@@ -16,7 +17,6 @@
     -   Make uniform backgrounds
     -   Create logo
     -   Choose font family
-    -   Basic animation to home buttons
     -   Hover effect to header links
 
 -   Content
@@ -34,6 +34,8 @@
     -   Image Alt Text
     -   Check all fonts for consistency
     -   Check padding and margins for consistency
+    -   Give current tab in navbar active class (with JS)
 
 Inspration:
 https://zenfounder.com/consulting
+ 
