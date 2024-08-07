@@ -106,11 +106,12 @@
 
 .box-shadow-left {
     box-shadow: -2rem 1rem var(--accent);
-    border-radius: 1rem;
+    border-radius: 0.25rem;
 }
 
 .box-shadow-right {
     box-shadow: 2rem 1rem var(--accent);
+    border-radius: 0.25rem;
 }
 
 .extra-top-padding {
@@ -118,6 +119,13 @@
     top: 50px;
 }
 
+.accent-border {
+    border: 0.15rem solid var(--accent);
+}
+
+.text-justify {
+    text-align: justify;
+}
 
 /* Buttons */
 .btn-kds-light {
@@ -198,6 +206,10 @@
 }
 
 /* Navbar */
+.nav-link {
+    font-size: 1.25rem;
+}
+
 .nav-link:hover {
     color: var(--accent);
     text-decoration: underline;
@@ -215,6 +227,13 @@
 
 .footer-background-d-2-l {
     background-image: url("./assets/footer-background-d-2-l.png");
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer-background-l-2-l {
+    background-image: url("./assets/footer-background-l-2-l.png");
     height: 200px;
     background-position: center;
     background-size: cover;

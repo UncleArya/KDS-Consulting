@@ -1,9 +1,9 @@
 {% block header %}
 <!-- Navbar -->
 
-<nav class="navbar navbar-expand-md dark-background">
+<nav class="navbar navbar-expand-md dark-background" data-bs-theme="dark">
     <div class="container-fluid">
-        <a class="navbar-brand light-font" href="{{ url_for('home') }}">
+        <a class="navbar-brand light-font ps-3" href="{{ url_for('home') }}">
             <img
                 href="{{ url_for('home') }}"
                 alt=""
@@ -22,14 +22,14 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-                <li class="nav-item">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0 pe-3">
+                <li class="nav-item pe-3">
                     <a class="nav-link light-font" href="{{ url_for('home') }}">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item pe-3">
                     <a class="nav-link light-font" href="{{ url_for('about') }}">About</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item pe-3">
                     <a class="nav-link light-font" href="{{ url_for('experience') }}">Experience</a>
                 </li>
                 <li class="nav-item">
