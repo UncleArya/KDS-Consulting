@@ -1,3 +1,28 @@
+@property --dark {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #344955;
+}
+
+@property --light {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #f7f8f2;
+}
+
+@property --mid {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #d1d4c9;
+}
+
+@property --accent {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #78a083;
+}
+
+/*** EXAMPLE STYLE GUIDE */
 .header-image {
     height: 50px;
     width: 50px;
@@ -10,25 +35,6 @@
 
 .clean-link {
     text-decoration: none;
-}
-
-.btn-transform:hover {
-	transition: .4s all;
-	transform: scale(1.2);
-}
-
-.light-text {
-    color: aliceblue;
-}
-
-.fancy-title {
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.navbar-background {
-	background-color: aliceblue;
 }
 
 .background-1 {
@@ -58,4 +64,172 @@
     background-image: url("./assets/back1.jpg");
     background-position: center;
     background-size: cover;
+}
+
+/*** NEW STYLE GUIDE */
+/* Site Wide */
+* {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--dark);
+}
+
+.paragraph-medium {
+    font-size: 1.5rem;
+}
+
+.light-font {
+    color: var(--light);
+}
+
+.dark-font {
+    color: var(--dark);
+}
+
+.light-background {
+    background-color: var(--light);
+}
+
+.dark-background {
+    background-color: var(--dark);
+}
+
+.mid-background {
+    background-color: var(--mid);
+}
+
+.accent-background {
+    background-color: var(--accent);
+}
+
+.box-shadow-left {
+    box-shadow: -2rem 1rem var(--accent);
+    border-radius: 1rem;
+}
+
+.box-shadow-right {
+    box-shadow: 2rem 1rem var(--accent);
+}
+
+.extra-top-padding {
+    position: relative;
+    top: 50px;
+}
+
+
+/* Buttons */
+.btn-kds-light {
+    background-color: var(--light);
+    border-color: var(--dark);
+    border-width: 0.15rem;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    color: var(--dark);
+}
+
+.btn-kds-light:hover {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.btn-kds-mid {
+    background-color: var(--mid);
+    border-color: var(--dark);
+    border-width: 0.15rem;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    color: var(--dark);
+}
+
+.btn-kds-mid:hover {
+    background-color: var(--dark);
+    color: var(--mid);
+}
+
+.btn-kds-dark {
+    background-color: var(--dark);
+    border-color: var(--light);
+    border-width: 0.15rem;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    color: var(--light);
+}
+
+.btn-kds-dark:hover {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.btn-kds-accent {
+    background-color: var(--accent);
+    border-color: var(--dark);
+    border-width: 0.15rem;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    color: var(--dark);
+}
+
+.btn-kds-accent:hover {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.btn-transform:hover {
+    transition: 0.4s all;
+    transform: scale(1.2);
+}
+
+/* Home Page */
+.home-background-1 {
+    background-image: url("./assets/Home - top background.png");
+    background-position: center;
+    background-size: cover;
+    height: 45rem;
+}
+
+.home-paragraph > ul > li {
+    color: var(--light);
+}
+
+.home-paragraph > p {
+    color: var(--light);
+}
+
+/* Navbar */
+.nav-link:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+}
+
+.navbar-brand:hover {
+    color: var(--light);
+}
+
+/* Footer */
+
+.footer-background-d-2-l {
+    background-image: url("./assets/footer-background-d-2-l.png");
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+}
+
+.btn-kds-footer {
+    background-color: var(--dark);
+    border-color: var(--dark);
+    border-width: 0.15rem;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    color: var(--light);
+}
+
+.btn-kds-footer:hover {
+    background-color: var(--mid);
+    color: var(--dark);
 }

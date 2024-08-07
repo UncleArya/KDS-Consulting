@@ -1,14 +1,14 @@
 {% block header %}
 <!-- Navbar -->
 
-<nav class="navbar navbar-expand-md navbar-background">
+<nav class="navbar navbar-expand-md dark-background">
     <div class="container-fluid">
-        <a class="navbar-brand" href="{{ url_for('home') }}">
+        <a class="navbar-brand light-font" href="{{ url_for('home') }}">
             <img
                 href="{{ url_for('home') }}"
                 alt=""
                 class="header-image d-inline-block"
-                src="./static/assets/Maru.png" />
+                src="./static/assets/fern-white.png" />
             KDS Consulting
         </a>
         <button
@@ -24,45 +24,20 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ms-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                    <a class="nav-link light-font" href="{{ url_for('home') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                    <a class="nav-link light-font" href="{{ url_for('about') }}">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('experience') }}">Experience</a>
+                    <a class="nav-link light-font" href="{{ url_for('experience') }}">Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+                    <a class="nav-link light-font" href="{{ url_for('contact') }}">Contact</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<!-- Add top padding -->
- <!-- <div class="py-5"></div> -->
-<!-- <div class="container mt-5">
-    <div
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
-        <div class="d-flex align-items-center col-md-3 mb-2 mb-md-0">
-            <img href="{{ url_for('home') }}" class="header-image" src="./static/assets/Maru.png" />
-            <a href="{{ url_for('home') }}" class="text-dark text-decoration-none"> KDS Consulting </a>
-        </div>
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li>
-                <a href="{{ url_for('home') }}" class="nav-link px-2 link-secondary">Home</a>
-            </li>
-            <li>
-                <a href="{{ url_for('about') }}" class="nav-link px-2 link-dark">About</a>
-            </li>
-            <li>
-                <a href="{{ url_for('experience') }}" class="nav-link px-2 link-dark">Experience</a>
-            </li>
-            <li>
-                <a href="{{ url_for('contact') }}" class="nav-link px-2 link-dark">Contact</a>
-            </li>
-        </ul>
-    </div>
-</div> -->
 {% endblock %}

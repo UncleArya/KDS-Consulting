@@ -1,15 +1,19 @@
 {% extends "components/base.html" %} {% block title %}KDS Consulting{% endblock %} {% block content %}
 <!-- Hero -->
-<div class="">
-    <div class="container">
+<div class="home-background-1">
+    <div class="container extra-top-padding">
         <div class="py-5 text-center">
-            <img class="d-block mx-auto m-5" src="./static/assets/Maru.png" alt="" width="72" height="72" />
-            <h1 class="fancy-title p-3">KDS Consulting</h1>
+            <img
+                class="d-block mx-auto mt-5 mb-3"
+                src="./static/assets/fern-colour.png"
+                alt=""
+                width="72"
+                height="72" />
+            <h1 class="fw-bold text-uppercase light-font display-2 p-3">KDS Consulting</h1>
             <div class="col-12 col-lg-8 col-xl-6 mx-auto">
-                <p class="mb-5">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti veritatis maiores recusandae ex
-                    magni accusantium voluptatem cumque fuga? Quod explicabo ducimus dolor ipsam natus aliquam porro
-                    harum debitis aspernatur dolores?
+                <p class="paragraph-medium light-font mt-3 mb-5 px-3">
+                    Offering expert advice, guidance, and support on a range of ecological projects, from stewardship
+                    and monitoring to project management and consultation.
                 </p>
             </div>
         </div>
@@ -17,22 +21,26 @@
 </div>
 
 <!-- Feature: About Page -->
-<div class="background-2">
+<div class="mid-background">
     <div class="container">
         <div class="py-5">
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <img class="d-block img-responsive fit-image p-3" src="./static/assets/square-image.jpg" alt="" />
+            <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col p-5">
+                    <div class="mx-5 mx-lg-0 mx-xl-5">
+                        <img class="img-fluid box-shadow-left" src="./static/assets/Home - About Me.jpeg" alt="" />
+                    </div>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <div class="p-5 mx-xxl-5 light-text">
-                        <h2>All About Me</h2>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti veritatis maiores
-                            recusandae ex magni accusantium voluptatem cumque fuga? Quod explicabo ducimus dolor ipsam
-                            natus aliquam porro harum debitis aspernatur dolores?
+                <div class="col p-5">
+                    <div class="mx-xxl-5">
+                        <h2 class="fw-bold text-center p-3">About Me</h2>
+                        <p class="paragraph-medium">
+                            Hi! My name is Kaitlyn Schurmann and I'm a Registered Professional Biologist and ecological
+                            consultant based on Vancouver Island, British Columbia, Canada, with experience in data
+                            management and analysis, ecological research and fieldwork, project management and more…
                         </p>
-                        <button type="button" class="btn btn-primary btn-transform">Learn More</button>
+                        <div class="text-center p-3">
+                            <button type="button" class="btn btn-kds-mid btn-transform">More About Kaitlyn</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -41,28 +49,44 @@
 </div>
 
 <!-- Feature: Experience Page -->
-
-<div class="background-3">
+<div class="dark-background">
     <div class="container">
-        <div class="py-5">
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="p-5 mx-xxl-5 light-text">
-                        <h2>My Experience and Skills</h2>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti veritatis maiores
-                            recusandae ex magni accusantium voluptatem cumque fuga? Quod explicabo ducimus dolor ipsam
-                            natus aliquam porro harum debitis aspernatur dolores?
-                        </p>
-                        <button type="button" class="btn btn-primary btn-transform">Learn More</button>
+        <div class="pt-5">
+            <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col pt-5">
+                    <div class="mx-xxl-5 light-text">
+                        <h2 class="light-font fw-bold text-center p-3">Experience and Skills</h2>
+                        <div class="paragraph-medium home-paragraph">
+                            <p class="">Experienced biology professional with a broad range of expertise, including:</p>
+                            <ul>
+                                <li>Biological inventories and species identification</li>
+                                <li>Wildlife management</li>
+                                <li>Data management and analysis</li>
+                                <li>Climate action planning and engagement</li>
+                                <li>Emergency preparedness and response planning</li>
+                                <li>Project Management</li>
+                                <li>
+                                    Collaboration and liaison with regulatory and governing bodies, Indigenous
+                                    communities and private sector organizations.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text-center p-3">
+                            <button type="button" class="btn btn-kds-dark btn-transform">Learn More</button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <img class="d-block img-responsive fit-image p-3" src="./static/assets/square-image.jpg" alt="" />
+                <div class="col pt-5 px-5 p-xxl-5">
+                    <div class="mx-5 mx-lg-0 my-lg-5 pt-lg-5 pt-xl-0 my-xl-0 mx-xl-5">
+                        <img
+                            class="img-fluid box-shadow-right"
+                            src="./static/assets/Home-Experience-crop.jpeg"
+                            alt="" />
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
+<div class="footer-background-d-2-l"></div>
 {% endblock %}
