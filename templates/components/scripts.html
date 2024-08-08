@@ -1,0 +1,26 @@
+{% block scripts %}
+<div class="light-background">
+    <div class="container">
+        <!-- Copyright -->
+        <div class="row">
+            <div class="text-center pt-5">
+                <p class="fw-bold">© <span class="fw-bold" id="website-date"></span> KDS Consulting</p>
+            </div>
+        </div>
+
+        <!-- Link to UncleArya -->
+        <div class="row">
+            <div class="text-center py-3">
+                <p class="fst-italic">
+                    <a class="clean-link italic-font" href="https://github.com/UncleArya">Website by UncleArya</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- JS -->
+        {{ bootstrap.load_js() }}
+        <script type="text/javascript" src="//code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="static/index.js" charset="utf-8"></script>
+    </div>
+</div>
+{% endblock %}

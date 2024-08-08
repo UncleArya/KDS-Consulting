@@ -12,10 +12,11 @@ SENDING_PASSWORD = os.environ.get("SENDING_PASSWORD")
 
 
 class NotificationManager:
-    def __init__(self, name, email, phone, message):
+    def __init__(self, name, email, phone, message, subject):
         self.name = name
         self.email = email
         self.phone = phone
+        self.subject = subject
         self.message = message
 
     def compose_email(self):
@@ -24,6 +25,7 @@ class NotificationManager:
 		<p><strong>From: </strong>{self.name}</p>
 		<p><strong>Email: </strong>{self.email}</p>
 		<p><strong>Phone: </strong>{self.phone}</p>
+        <p><strong>From: </strong>{self.subject}</p>
 		<p><strong>Message: </strong>{self.message}</p>
 		"""
         return email_body

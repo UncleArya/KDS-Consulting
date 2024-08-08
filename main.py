@@ -16,9 +16,10 @@ def home():
         name = request.form["fullname"]
         email = request.form["email"]
         phone = request.form["phone"]
+        subject = request.form["subject"]
         message = request.form["message"]
         print(name, email, phone, message)
-        NotificationManager(name, email, phone, message).send_email()
+        NotificationManager(name, subject, email, phone, message).send_email()
         return render_template("contact_submitted.html")
 
 
@@ -41,15 +42,12 @@ def contact():
         name = request.form["fullname"]
         email = request.form["email"]
         phone = request.form["phone"]
+        subject = request.form["subject"]
         message = request.form["message"]
         print(name, email, phone, message)
-        NotificationManager(name, email, phone, message).send_email()
+        NotificationManager(name, email, phone, subject, message).send_email()
         return render_template("contact_submitted.html")
 
-
-# Needed to run on Render host
-# if __name__ == "__main__":
-#     app.run(host="0.0.0.0", port=5000)
 
 # To use while editing
 if __name__ == "__main__":
