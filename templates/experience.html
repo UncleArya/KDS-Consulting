@@ -1,109 +1,103 @@
 {% extends "components/base.html" %} {% block title %}KDS Consulting - Experience{% endblock %} {% block content %}
-<div class="image-background-1 pt-5 pb-3">
-    <div class="container px-4">
-        <div class="row">
-            <h1 class="display-5 fw-bold text-body-emphasis fancy-title text-center">Professional Experience</h1>
+<!-- Page header -->
+<div class="light-background">
+    <div class="container py-5">
+        <div class="row align-items-center py-5">
+            <div class="col-12 col-lg-7">
+                <h1 class="fw-bold text-center">Professional Experience</h1>
+                <h4 class="text-center italic-font py-3">Registered Professional Biologist (RPBio)</h4>
+                <h4 class="text-center italic-font">Master of Sciences (MSc)</h4>
+            </div>
+            <div class="col-12 col-lg-5">
+                <img class="img-fluid box-shadow-right" src="static\assets\About-Bio.jpeg" alt="" />
+            </div>
         </div>
-
-        <!-- Divider -->
-        <div class="row">
-            <img class="col-4 mx-auto d-block img-fluid" src="static\assets\divider1.png" alt="" />
+    </div>
+</div>
+<!-- Experience summary -->
+<div class="mid-background">
+    <div class="container py-5">
+        <div class="row py-5">
+            <h2 class="text-center fw-bold">Highlights</h2>
         </div>
-
-        <!-- Experience Cards -->
-        <div class="row">
-            <h2 class="fw-bold fancy-title text-center pb-3">Experience Highlights</h2>
-            <div class="col-10 col-xl-12 mx-auto">
-                <div class="row">
-                    <!-- Card 1 -->
-                    <div class="col pb-2">
-                        <div class="card text-center h-100">
-                            <div class="card-header fs-5 fw-bold">Stewardship Liaison</div>
-                            <ul class="list-group list-group-flush border-bottom-0">
-                                <li class="list-group-item fs-5">First Nations of<br />The Treaty Society</li>
-                            </ul>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    Work in support of the five Maa-nulth modern treaty Nations: Huu-ay-aht First
-                                    Nations, Ka:'yu:'k't'h'/Che:k'tles7et'h' First Nations, t̓uk̓ʷaa?atḥ Nation,
-                                    Uchucklesaht Tribe and Yuułu?ił?atḥ Government.
-                                </p>
-                            </div>
-                            <ul class="list-group list-group-flush border-top-0">
-                                <li class="list-group-item">June 2023 - present</li>
-                            </ul>
-                            <div class="card-footer">
-                                <a href="#job-1" class="btn btn-success btn-sm">Learn More</a>
-                            </div>
-                        </div>
+        <div class="row row-cols-1 row-cols-lg-3 py-5 g-5 align-items-end">
+            <!-- Job 1 -->
+            <div class="col px-5">
+                <div class="row text-center">
+                    <div class="job-icon pb-3">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="50"
+                            height="50"
+                            fill="currentColor"
+                            class="bi bi-tree-fill"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777z" />
+                        </svg>
                     </div>
-
-                    <!-- Card 2 -->
-                    <div class="col pb-2">
-                        <div class="card text-center h-100">
-                            <div class="card-header fs-5 fw-bold">Wildlife Biostatistician</div>
-                            <ul class="list-group list-group-flush border-bottom-0">
-                                <li class="list-group-item fs-5">Fish & Wildlife Branch<br />BC Ministry of Forests</li>
-                            </ul>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    Provided expert advice on wildlife and habitat stewardship and management activities
-                                    under the BC Wildlife Act
-                                </p>
-                            </div>
-                            <ul class="list-group list-group-flush border-top-0">
-                                <li class="list-group-item">April 2018 - June 2023</li>
-                            </ul>
-                            <div class="card-footer">
-                                <a href="#job-2" class="btn btn-success btn-sm">Learn More</a>
-                            </div>
-                        </div>
+                    <div class="job-title">
+                        <p class="">Stewardship Liaison</p>
                     </div>
-
-                    <!-- Card 3 -->
-                    <div class="col pb-2">
-                        <div class="card text-center h-100">
-                            <div class="card-header fs-5 fw-bold">Position Title</div>
-                            <ul class="list-group list-group-flush border-bottom-0">
-                                <li class="list-group-item fs-5">Location<br />of Job</li>
-                            </ul>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quos vel soluta
-                                    unde fuga illum voluptates voluptas ratione suscipit, consectetur ex consequuntur
-                                    quo maxime? Quis minima sequi laudantium voluptatum reprehenderit?
-                                </p>
-                            </div>
-                            <ul class="list-group list-group-flush border-top-0">
-                                <li class="list-group-item">Year - Year</li>
-                            </ul>
-                            <div class="card-footer">
-                                <a href="#job-3" class="btn btn-success btn-sm">Learn More</a>
-                            </div>
-                        </div>
+                    <div class="job-location">
+                        <p class="">First Nations of the Maa-nulth Treaty Society</p>
                     </div>
+                    <div class="job-button text-center">
+                        <button href="#job-1" class="btn btn-kds-mid">Learn More</button>
+                    </div>
+                </div>
+            </div>
 
-                    <!-- Card 4 -->
-                    <div class="col pb-2">
-                        <div class="card text-center h-100">
-                            <div class="card-header fs-5 fw-bold">Position Title</div>
-                            <ul class="list-group list-group-flush border-bottom-0">
-                                <li class="list-group-item fs-5">Location<br />of Job</li>
-                            </ul>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus similique
-                                    numquam veritatis expedita voluptas. Eveniet modi nisi sapiente officia voluptatem
-                                    perspiciatis fugiat autem nihil a. Qui aut impedit autem molestias.
-                                </p>
-                            </div>
-                            <ul class="list-group list-group-flush border-top-0">
-                                <li class="list-group-item">Year - Year</li>
-                            </ul>
-                            <div class="card-footer">
-                                <a href="#job-4" class="btn btn-success btn-sm">Learn More</a>
-                            </div>
-                        </div>
+            <!-- Job 2 -->
+            <div class="col px-5">
+                <div class="row text-center">
+                    <div class="job-icon pb-3">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="50"
+                            height="50"
+                            fill="currentColor"
+                            class="bi bi-tree-fill"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777z" />
+                        </svg>
+                    </div>
+                    <div class="job-title">
+                        <p class="">Wildlife Biostatistician</p>
+                    </div>
+                    <div class="job-location">
+                        <p class="">Fish & Wildlife Branch BC Ministry of Forests</p>
+                    </div>
+                    <div class="job-button text-center">
+                        <button href="#job-2" class="btn btn-kds-mid">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job 3 -->
+            <div class="col px-5">
+                <div class="row text-center">
+                    <div class="job-icon pb-3">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="50"
+                            height="50"
+                            fill="currentColor"
+                            class="bi bi-tree-fill"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777z" />
+                        </svg>
+                    </div>
+                    <div class="job-title">
+                        <p class="">Forestry Researcher</p>
+                    </div>
+                    <div class="job-location">
+                        <p class="">Natural Resources Canada & University of Alberta</p>
+                    </div>
+                    <div class="job-button text-center">
+                        <button href="#job-3" class="btn btn-kds-mid">Learn More</button>
                     </div>
                 </div>
             </div>
