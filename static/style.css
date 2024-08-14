@@ -22,18 +22,6 @@
     initial-value: #78a083;
 }
 
-/*** EXAMPLE STYLE GUIDE */
-.header-image {
-    height: 50px;
-    width: 50px;
-}
-
-.fit-image {
-    width: 100%;
-    object-fit: cover;
-}
-
-/*** NEW STYLE GUIDE */
 /* Site Wide */
 * {
     font-family: "Figtree", sans-serif;
@@ -184,6 +172,11 @@ body {
 }
 
 /* Navbar */
+.header-image {
+    height: 50px;
+    width: 50px;
+}
+
 .nav-link {
     font-size: 1.25rem;
     color: var(--light);
@@ -312,6 +305,21 @@ body {
     background-color: var(--light);
     color: var(--dark);
 }
+
+.progress {
+    background-color: var(--light);
+}
+
+.progress-bar {
+    background-color: var(--accent);
+}
+
+.skill-item > p {
+    color: var(--light);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
 .skill-icons {
     fill: var(--light);
 }
@@ -319,10 +327,21 @@ body {
 .skill-title {
     color: var(--light);
     font-weight: 700;
-    padding-left: 0.5rem;
+    font-size: 1.25rem;
+    text-align: center;
 }
 
 .skill-body {
     color: var(--light);
-    padding-left: 0.5rem;
+    text-align: center;
+}
+
+.carousel {
+    border: 0.15rem solid var(--accent);
+}
+
+.center-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
