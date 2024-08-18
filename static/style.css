@@ -103,6 +103,12 @@ body {
     border: 0rem solid var(--accent);
 }
 
+.center-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 /* Spacing */
 .extra-top-padding {
     position: relative;
@@ -340,8 +346,9 @@ body {
     border: 0.15rem solid var(--accent);
 }
 
-.center-image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.carousel-item > a > img {
+    height: 50%;
 }
+
+/* Animations */
+
