@@ -1,7 +1,8 @@
 {% extends "components/base.html" %} {% block title %}KDS Consulting{% endblock %} {% block content %}
+
 <!-- Hero -->
 <div class="home-background-1">
-    <div class="container extra-top-padding">
+    <div class="container extra-top-padding px-3 px-lg-0" data-aos="fade-up">
         <div class="py-5 text-center">
             <img
                 class="d-block mx-auto mt-5 mb-3"
@@ -9,9 +10,9 @@
                 alt=""
                 width="72"
                 height="72" />
-            <h1 class="fw-bold text-uppercase light-font display-2 p-3">KDS Consulting</h1>
+            <h1 class="fw-bold text-uppercase light-font display-2 py-3">KDS Consulting</h1>
             <div class="col-12 col-lg-8 col-xl-6 mx-auto">
-                <p class="paragraph-medium light-font mt-3 mb-5 px-3">
+                <p class="paragraph-medium light-font mt-3 mb-5">
                     Offering expert advice, guidance, and support on a range of ecological projects, from stewardship
                     and monitoring to project management and consultation.
                 </p>
@@ -19,27 +20,24 @@
         </div>
     </div>
 </div>
+
 <!-- Feature: About -->
 <div class="mid-background">
-    <div class="container">
-        <div class="py-5">
-            <div class="row row-cols-1 row-cols-lg-2">
-                <div class="col p-5">
-                    <div class="mx-5 mx-lg-0 mx-xl-5">
-                        <img class="img-fluid box-shadow-left" src="./static/assets/Home-About-Me-crop.jpeg" alt="" />
-                    </div>
-                </div>
-                <div class="col p-5">
-                    <div class="mx-xxl-5">
-                        <h2 class="fw-bold text-center p-3">About Me</h2>
-                        <p class="paragraph-medium">
-                            Hi! My name is Kaitlyn Schurmann and I'm a Registered Professional Biologist and ecological
-                            consultant based on Vancouver Island, British Columbia, Canada, with experience in data
-                            management and analysis, ecological research and fieldwork, project management and more…
-                        </p>
-                        <div class="text-center p-3">
-                            <button type="button" class="btn btn-kds-mid btn-transform">More About Kaitlyn</button>
-                        </div>
+    <div class="container py-5 px-3 px-lg-0" data-aos="fade-up">
+        <div class="row row-cols-1 row-cols-lg-2 py-5 g-5 align-items-center">
+            <div class="col">
+                <img class="center-image box-shadow-left" src="./static/assets/About-Bio-Crop.jpeg" alt="" />
+            </div>
+            <div class="col">
+                <div class="mx-xxl-5">
+                    <h2 class="fw-bold text-center py-3">About Me</h2>
+                    <p class="paragraph-medium">
+                        Hi! My name is Kaitlyn Schurmann and I'm a Registered Professional Biologist and ecological
+                        consultant based on Vancouver Island, British Columbia, Canada, with experience in data
+                        management and analysis, ecological research and fieldwork, project management and more…
+                    </p>
+                    <div class="text-center py-3">
+                        <button type="button" class="btn btn-kds-mid btn-transform">More About Kaitlyn</button>
                     </div>
                 </div>
             </div>
@@ -49,37 +47,33 @@
 
 <!-- Feature: Experience -->
 <div class="dark-background">
-    <div class="container">
-        <div class="py-5">
-            <div class="row row-cols-1 row-cols-lg-2">
-                <div class="col p-5">
-                    <div class="mx-xxl-5">
-                        <h2 class="light-font fw-bold text-center p-3">Experience and Skills</h2>
-                        <div class="home-paragraph">
-                            <p>Experienced biology professional with a broad range of expertise, including:</p>
-                            <ul>
-                                <li>Biological inventories and species identification</li>
-                                <li>Wildlife management</li>
-                                <li>Data management and analysis</li>
-                                <li>Climate action planning and engagement</li>
-                                <li>Emergency preparedness and response planning</li>
-                                <li>Project Management</li>
-                                <li>
-                                    Collaboration and liaison with regulatory and governing bodies, Indigenous
-                                    communities and private sector organizations.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="text-center p-3">
-                            <button type="button" class="btn btn-kds-dark btn-transform">Learn More</button>
-                        </div>
+    <div class="container py-5 px-3 px-lg-0" data-aos="fade-up">
+        <div class="row row-cols-1 row-cols-lg-2 py-5 g-5">
+            <div class="col">
+                <div class="mx-xxl-5">
+                    <h2 class="light-font fw-bold text-center p-3">Experience and Skills</h2>
+                    <div class="home-paragraph">
+                        <p>Experienced biology professional with a broad range of expertise, including:</p>
+                        <ul>
+                            <li>Biological inventories and species identification</li>
+                            <li>Wildlife management</li>
+                            <li>Data management and analysis</li>
+                            <li>Climate action planning and engagement</li>
+                            <li>Emergency preparedness and response planning</li>
+                            <li>Project Management</li>
+                            <li>
+                                Collaboration and liaison with regulatory and governing bodies, Indigenous communities
+                                and private sector organizations.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-center p-3">
+                        <button type="button" class="btn btn-kds-dark btn-transform">Learn More</button>
                     </div>
                 </div>
-                <div class="col p-5">
-                    <div class="mx-xxl-5 py-5 center-image">
-                        <img class="center-image box-shadow-right" src="./static/assets/Home-Experience.JPG" alt="" />
-                    </div>
-                </div>
+            </div>
+            <div class="col">
+                <img class="center-image box-shadow-right" src="./static/assets/Home-Experience-crop.JPG" alt="" />
             </div>
         </div>
     </div>

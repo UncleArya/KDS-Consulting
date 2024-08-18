@@ -345,10 +345,3 @@ body {
 .carousel {
     border: 0.15rem solid var(--accent);
 }
-
-.carousel-item > a > img {
-    height: 50%;
-}
-
-/* Animations */
-
