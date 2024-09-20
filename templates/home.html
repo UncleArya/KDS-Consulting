@@ -10,7 +10,7 @@
                 alt=""
                 width="72"
                 height="72" />
-            <h1 class="fw-bold text-uppercase light-font display-2 py-3">KDS Consulting</h1>
+            <h1 class="fw-bold text-uppercase light-font fancy-title display-2 py-3">KDS Consulting</h1>
             <div class="col-12 col-lg-8 col-xl-6 mx-auto">
                 <p class="paragraph-medium light-font mt-3 mb-5">
                     Offering expert advice, guidance, and support on a range of ecological projects, from stewardship
@@ -26,7 +26,7 @@
     <div class="container py-5 px-3 px-lg-0" data-aos="fade-up">
         <div class="row row-cols-1 row-cols-lg-2 py-5 g-5 align-items-center">
             <div class="col">
-                <img class="center-image box-shadow-left" src="./static/assets/About-Bio-Crop.jpeg" alt="" />
+                <img class="center-image box-shadow-left" src="./static/assets/home_about.jpg" alt="" />
             </div>
             <div class="col">
                 <div class="mx-xxl-5">
@@ -37,7 +37,9 @@
                         management and analysis, ecological research and fieldwork, project management and more…
                     </p>
                     <div class="text-center py-3">
-                        <button type="button" class="btn btn-kds-mid btn-transform">More About Kaitlyn</button>
+                        <a href="{{ url_for('about') }}">
+                            <button type="button" class="btn btn-kds-mid btn-transform">More About Kaitlyn</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -60,7 +62,7 @@
                             <li>Data management and analysis</li>
                             <li>Climate action planning and engagement</li>
                             <li>Emergency preparedness and response planning</li>
-                            <li>Project Management</li>
+                            <li>Project management</li>
                             <li>
                                 Collaboration and liaison with regulatory and governing bodies, Indigenous communities
                                 and private sector organizations.
@@ -68,12 +70,14 @@
                         </ul>
                     </div>
                     <div class="text-center p-3">
-                        <button type="button" class="btn btn-kds-dark btn-transform">Learn More</button>
+                        <a href="{{ url_for('experience') }}">
+                            <button type="button" class="btn btn-kds-dark btn-transform">Learn More</button>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <img class="center-image box-shadow-right" src="./static/assets/Home-Experience-crop.JPG" alt="" />
+                <img class="center-image box-shadow-right" src="./static/assets/home_experience.JPG" alt="" />
             </div>
         </div>
     </div>
