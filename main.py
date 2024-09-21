@@ -9,18 +9,7 @@ bootstrap = Bootstrap5(app)
 
 @app.route("/", methods=["GET", "POST"])
 def home():
-    if request.method == "GET":
-        return render_template("home.html")
-
-    if request.method == "POST":
-        name = request.form["fullname"]
-        email = request.form["email"]
-        phone = request.form["phone"]
-        subject = request.form["subject"]
-        message = request.form["message"]
-        print(name, email, phone, message)
-        NotificationManager(name, subject, email, phone, message).send_email()
-        return render_template("contact_submitted.html")
+    return render_template("home.html")
 
 
 @app.route("/about")
@@ -39,13 +28,14 @@ def contact():
         return render_template("contact.html")
 
     if request.method == "POST":
-        name = request.form["fullname"]
-        email = request.form["email"]
-        phone = request.form["phone"]
-        subject = request.form["subject"]
-        message = request.form["message"]
-        print(name, email, phone, message)
-        NotificationManager(name, email, phone, subject, message).send_email()
+        form_name = request.form["fullname"]
+        form_email = request.form["email"]
+        form_phone = request.form["phone"]
+        form_subject = request.form["subject"]
+        form_message = request.form["message"]
+        NotificationManager(
+            name=form_name, email=form_email, phone=form_phone, subject=form_subject, message=form_message
+        ).send_email()
         return render_template("contact_submitted.html")
 
 
