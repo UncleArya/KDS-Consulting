@@ -16,3 +16,7 @@ Website created for the professional consulting service: KDS Consulting. Custom 
 - Graphic Design
 
 ## Screenshots
+![Screenshot1](https://github.com/user-attachments/assets/86dd7b8c-5b85-44ab-afc3-19c3f8af8902)
+![Screenshot2](https://github.com/user-attachments/assets/6d87fb53-3989-459b-922d-f94dbf772a1e)
+![Screenshot4](https://github.com/user-attachments/assets/a38d8eb8-afa5-4841-8515-3a34b9199a6d)
+![Screenshot3](https://github.com/user-attachments/assets/ab62b39f-9239-4132-baae-54b6c32adf6a)
