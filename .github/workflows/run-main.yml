@@ -31,4 +31,5 @@ jobs:
                   EMAIL_PASSWORD: ${{ secrets.SENDING_PASSWORD }}
                   SENDING_EMAIL: ${{ secrets.SENDING_EMAIL }}
                   RECEIVING_EMAIL: ${{secrets.RECEIVING_EMAIL }}
-              run: gunicorn -w 4 main:app
+              run: |
+                gunicorn -w 4 main:app
