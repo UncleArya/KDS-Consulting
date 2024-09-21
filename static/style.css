@@ -71,10 +71,9 @@ body {
 }
 
 .fancy-title {
-    font-family: "Merienda", cursive;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
+font-family: "Neucha", cursive;
+font-weight: 400;
+font-style: normal;
 }
 
 /* Backgrounds */
