@@ -28,6 +28,22 @@
                 duration: 800,
             });
         </script>
+        <script src="https://swetrix.org/swetrix.js" defer></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                swetrix.init("FPprAlHS1Rmk", {
+                    apiURL: "https://swetrix-api.jirachi.xyz/log",
+                });
+                swetrix.trackViews();
+            });
+        </script>
+
+        <noscript>
+            <img
+                src="https://swetrix-api.jirachi.xyz/log/noscript?pid=FPprAlHS1Rmk"
+                alt=""
+                referrerpolicy="no-referrer-when-downgrade" />
+        </noscript>
     </div>
 </div>
 {% endblock %}
