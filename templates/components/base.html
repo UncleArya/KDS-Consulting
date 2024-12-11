@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="https://swetrix.org/swetrix.js" defer></script>
         {% include "components/head.html" %}
 
         <!-- Page title -->
@@ -16,6 +17,21 @@
         </main>
 
         <!-- Footer -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                swetrix.init("FPprAlHS1Rmk", {
+                    apiURL: "https://swetrix-api.jirachi.xyz/log",
+                });
+                swetrix.trackViews();
+            });
+        </script>
+
+        <noscript>
+            <img
+                src="https://swetrix-api.jirachi.xyz/log/noscript?pid=FPprAlHS1Rmk"
+                alt=""
+                referrerpolicy="no-referrer-when-downgrade" />
+        </noscript>
         <footer>{% include "components/footer.html" %}</footer>
         <section>{% include "components/scripts.html" %}</section>
     </body>
