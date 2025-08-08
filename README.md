@@ -12,6 +12,7 @@ Website created for the professional consulting service: KDS Consulting. Custom 
     - Bootstrap
     - Animate on Scroll
 - JavaScript
+- Docker
 - Client Management
 - Graphic Design
 
